@@ -6,5 +6,12 @@ body {
   text-align: center;
   font-family: 'Arial';
   background: #207474;
-  color: #023292;
+  color: #f9fafb;
+}
+h1{
+  text-align: center;
+}
+
+ul{
+  text-align: left;
 }
