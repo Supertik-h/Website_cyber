@@ -39,6 +39,8 @@
   margin-right: 10px;
   margin-left: 10px;
   border-radius: 10px;
+  a:link { color: #f9fafb; }
+  a:visited { color: #f9fafb; }
 }
 #social:hover{
   cursor: pointer;
@@ -62,6 +64,7 @@
   margin-left: auto;
 }
 #button{
+  
   line-height: 20px;
   margin-top: auto;
   background-color: #59b1ab;
@@ -72,6 +75,10 @@
   margin-left: auto;
   border-radius: 7px;
   font-size: 14px;
+  a:link { color: #f9fafb; }
+  a:visited { color: #f9fafb; }
+  
+  
 }
 #content{
   margin-top: 10px;
@@ -105,5 +112,10 @@ h1{
   text-align: center;
   margin-top: 15px;
   font-size: 70px;
+}
+
+a{
+  
+  text-decoration: none;
 }
 
