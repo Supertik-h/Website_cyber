@@ -1,3 +1,4 @@
+/*MAIN*/
 #container{
   width: auto;
   height: auto;
@@ -78,12 +79,16 @@
   font-size: 14px;
   a:link { color: #f9fafb; }
   a:visited { color: #f9fafb; }
+  transition: transform 0.4s ease, box-shadow 0.3s ease;
  
 }
 #button:hover{
   background-color: #9ce8e1;
   a:link { color: #000000; }
   a:visited { color: #000000; }
+  transform: scale(1.1);
+
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
 }
 #content{
   margin-top: 10px;
@@ -93,6 +98,7 @@
   margin-left: auto;
   
 }
+/* BLOG*/
 #pod_content_l{
   padding: none;
   margin-left: 50px;
@@ -113,6 +119,12 @@
   width: 500px;
   height: 120px;
   border-radius: 10px;
+  transition: transform 0.4s ease, box-shadow 0.3s ease;
+}
+#pod_content_r:hover{
+  transform: scale(1.1);
+
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
 }
 #img_content{
   padding: none;
@@ -129,6 +141,35 @@
   width: 320px;
   height: 95px;
   
+}
+
+/*DONAIONS*/
+#content_d{
+  float: left;
+  width: 500px;
+  height: 450px;
+  margin-right: 56px;
+  margin-left: 56px;
+  position: relative;
+  top: 15px;
+  transition: transform 0.4s ease, box-shadow 0.3s ease;
+}
+#content_d:hover{
+  transform: scale(1.04);
+
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+#content_d_img{
+  width: 477px;
+  height: 120px;
+}
+
+#content_d_text{
+  margin-top: 10px;
+  width: 477px;
+  height: 270px;
+  font-size: 20px;
 }
 .bordered-div {
     border: 2px solid #000000; 
