@@ -78,8 +78,12 @@
   font-size: 14px;
   a:link { color: #f9fafb; }
   a:visited { color: #f9fafb; }
-  
-  
+ 
+}
+#button:hover{
+  background-color: #9ce8e1;
+  a:link { color: #000000; }
+  a:visited { color: #000000; }
 }
 #content{
   margin-top: 10px;
@@ -87,19 +91,28 @@
   height: 500px;
   margin-right: auto;
   margin-left: auto;
+  
 }
 #pod_content_l{
   padding: none;
   margin-left: 50px;
   width: 500px;
   height: 120px;
+  border-radius: 10px;
+  transition: transform 0.4s ease, box-shadow 0.3s ease;
+}
+#pod_content_l:hover{
+  transform: scale(1.1);
   
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+ 
+
 }
 #pod_content_r{
   margin-left: 700px;
   width: 500px;
   height: 120px;
-
+  border-radius: 10px;
 }
 #img_content{
   padding: none;
@@ -107,15 +120,15 @@
   height: 95px;
   position: relative;
   down: 10px;
-  display: flex;
+  float: left;
+  margin-right: 10px;
 }
 #text_content{
   display: flex;
+  justify-content: flex-start;
   width: 320px;
   height: 95px;
-  position: relative;
-  left: 50px;
-  top: -10px;
+  
 }
 .bordered-div {
     border: 2px solid #000000; 
