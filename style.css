@@ -1,3 +1,11 @@
+@keyframes pulsate {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+
+
 /*MAIN*/
 #container{
   width: auto;
@@ -43,6 +51,7 @@
   border-radius: 10px;
   a:link { color: #f9fafb; }
   a:visited { color: #f9fafb; }
+  animation: pulsate 2s infinite;
 }
 #social:hover{
   cursor: pointer;
@@ -121,7 +130,7 @@
 
 /* About */
 #abt_img{
-
+  border-radius: 7px;
   width: 810px;
   height: 475px;
   float: left;
@@ -152,6 +161,7 @@
 */
 
 #abt_text{
+  border-radius: 7px;
   float: left;
   width: 400px;
   height: 475px;
@@ -178,6 +188,7 @@
 
 /* BLOG*/
 #pod_content_l{
+  background: linear-gradient(180deg, rgba(7,120,110,1) 0%, rgba(89,177,171,1) 53%);
   padding: none;
   margin-left: 50px;
   width: 500px;
@@ -193,6 +204,7 @@
 
 }
 #pod_content_r{
+  background: linear-gradient(180deg, rgba(7,120,110,1) 0%, rgba(89,177,171,1) 53%);
   margin-left: 700px;
   width: 500px;
   height: 120px;
@@ -220,19 +232,52 @@
   height: 95px;
   
 }
-/*Source*/
-@keyframes pulsate {
-    0% { transform: scale(1); }
-    50% { transform: scale(1.01); }
-    100% { transform: scale(1); }
+/* TUTORIALS*/
+#tut_p_c{
+  background: linear-gradient(180deg, rgba(7,120,110,1) 0%, rgba(89,177,171,1) 53%, rgba(43,198,212,1) 100%);
+  margin-left: 40px;
+  margin-right: 40px;
+  width: 320px;
+  height: 475px;
+  float: left;
+  border-radius: 7px;
+  transition: transform 0.4s ease, box-shadow 0.3s ease;
 }
+#tut_p_c:hover{
+  transform: scale(1.03);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+#tut_title{
+  align-items: center;
+  width: 296px;
+  height: 60px;
+  font-size: 50px;
+}
+
+#tut_text{
+  margin-top: 10px;
+  width: 296px;
+  height: 355px;
+  font-size: 17.5px;
+}
+
+
+
+
+
+
+
+
+
+/*Source*/
+
 #sou_p_c{
   /*
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
   */
-  animation: pulsate 2s infinite;
+  background: linear-gradient(180deg, rgba(7,120,110,1) 0%, rgba(89,177,171,1) 53%);
   margin: 10px;
   width: 380px;
   height: 180px;
@@ -285,6 +330,7 @@
 
 /*DONAIONS*/
 #content_d{
+  background: linear-gradient(180deg, rgba(7,120,110,1) 0%, rgba(89,177,171,1) 53%);
   border-radius: 10px;
   float: left;
   width: 500px;
@@ -330,7 +376,7 @@ img{
 body {
   text-align: center;
   font-family: 'Arial';
-  background: #207474;
+  background: linear-gradient(180deg, rgba(7,120,110,1) 0%, rgba(89,177,171,1) 53%, rgba(43,198,212,1) 100%);
   color: #f9fafb;
 }
 h1{
