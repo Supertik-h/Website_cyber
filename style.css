@@ -31,6 +31,7 @@
   padding: 0px;
 }
 #social{
+  opacity: 0.8;
   background-color: #59b1ab;
   width: 20px;
   height: 20px;
@@ -89,7 +90,25 @@
   transform: scale(1.1);
 
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+
+  
 }
+/* unsuccesful attempt to make an expandable list
+#drop_down{
+  width: 100px;
+  height: 50px;
+  background-color: #0993ce;
+  border: 2px solid #000000;
+  padding: 10px;
+  display: block;
+  z-index: 5;
+}
+#button:hover #drop_down{
+  
+
+  display: block;
+}
+*/
 #content{
   margin-top: 10px;
   width: auto;
@@ -98,6 +117,50 @@
   margin-left: auto;
   
 }
+
+
+/* About */
+#abt_img{
+
+  width: 810px;
+  height: 475px;
+  float: left;
+  margin-right: 5px;
+  transition: transform 0.4s ease, box-shadow 0.3s ease;
+}
+#abt_img:hover{
+  transform: scale(1.01);
+
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+  
+}
+
+
+#abt_text{
+  float: left;
+  width: 400px;
+  height: 475px;
+  margin-left: 10px;
+  font-size: 17px;
+  transition: transform 0.4s ease, box-shadow 0.3s ease;
+}
+
+#abt_text:hover{
+  transform: scale(1.01);
+
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+
+
+
+
+
+
+
+
+
+
 /* BLOG*/
 #pod_content_l{
   padding: none;
@@ -145,6 +208,7 @@
 
 /*DONAIONS*/
 #content_d{
+  border-radius: 10px;
   float: left;
   width: 500px;
   height: 450px;
