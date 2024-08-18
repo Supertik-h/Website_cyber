@@ -14,6 +14,7 @@
   margin-left: auto;
 }
 #logo{
+  
   width: auto;
   height: 100px;
   margin-right: auto;
@@ -24,9 +25,15 @@
 }
 #logo_img{
   position: relative;
-  
+  transition: transform 0.4s ease, box-shadow 0.3s ease;
   right: 680px;
 }
+#logo_img:hover{
+  transform: scale(1.1);
+
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
 #pod_logo{
   width: 120;
   height: 55;
@@ -39,7 +46,8 @@
   padding: 0px;
 }
 #social{
-  opacity: 0.8;
+  
+  opacity: 1.0;
   background-color: #59b1ab;
   width: 20px;
   height: 20px;
@@ -52,9 +60,13 @@
   a:link { color: #f9fafb; }
   a:visited { color: #f9fafb; }
   animation: pulsate 2s infinite;
+  
 }
 #social:hover{
   cursor: pointer;
+  
+}
+#social_und{
   
 }
 #welcome{
@@ -68,6 +80,9 @@
   left: 90px;
 }
 #buttons{
+  border: 2px dashed  #000000;
+  border-radius: 7px;
+  background: linear-gradient(180deg, rgba(31,113,190,1) 0%, rgba(12,69,121,1) 55%);
   display: flex;
   margin-top: 10px;
   width: auto;
@@ -76,10 +91,10 @@
   margin-left: auto;
 }
 #button{
-  
+  border: 2px solid #000000;
   line-height: 20px;
   margin-top: auto;
-  background-color: #59b1ab;
+  background: linear-gradient(0deg, rgba(34,120,200,1) 0%, rgba(20,91,159,1) 50%, rgba(10,65,116,1) 100%);
   margin-bottom: auto;
   width: 60px;
   height: 25px;
@@ -93,9 +108,10 @@
  
 }
 #button:hover{
-  background-color: #9ce8e1;
-  a:link { color: #000000; }
-  a:visited { color: #000000; }
+  background: linear-gradient(0deg, rgba(34,120,200,0.8671919451374299) 0%, rgba(20,91,159,1) 50%, rgba(10,65,116,1) 100%);
+  a:link { color: #ffffff; }
+  a:visited { color: #ffffff; }
+  font-weight: 700;
   transform: scale(1.1);
 
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
@@ -130,6 +146,7 @@
 
 /* About */
 #abt_img{
+  background: linear-gradient(0deg, rgba(34,120,200,1) 0%, rgba(20,91,159,1) 50%, rgba(10,65,116,1) 100%);
   border-radius: 7px;
   width: 810px;
   height: 475px;
@@ -161,6 +178,7 @@
 */
 
 #abt_text{
+  background: linear-gradient(0deg, rgba(34,120,200,1) 0%, rgba(20,91,159,1) 50%, rgba(10,65,116,1) 100%);
   border-radius: 7px;
   float: left;
   width: 400px;
@@ -188,7 +206,7 @@
 
 /* BLOG*/
 #pod_content_l{
-  background: linear-gradient(180deg, rgba(7,120,110,1) 0%, rgba(89,177,171,1) 53%);
+  background: linear-gradient(0deg, rgba(34,120,200,1) 0%, rgba(20,91,159,1) 50%, rgba(10,65,116,1) 100%);
   padding: none;
   margin-left: 50px;
   width: 500px;
@@ -204,7 +222,7 @@
 
 }
 #pod_content_r{
-  background: linear-gradient(180deg, rgba(7,120,110,1) 0%, rgba(89,177,171,1) 53%);
+  background: linear-gradient(0deg, rgba(34,120,200,1) 0%, rgba(20,91,159,1) 50%, rgba(10,65,116,1) 100%);
   margin-left: 700px;
   width: 500px;
   height: 120px;
@@ -234,7 +252,7 @@
 }
 /* TUTORIALS*/
 #tut_p_c{
-  background: linear-gradient(180deg, rgba(7,120,110,1) 0%, rgba(89,177,171,1) 53%, rgba(43,198,212,1) 100%);
+  background: linear-gradient(0deg, rgba(34,120,200,1) 0%, rgba(20,91,159,1) 50%, rgba(10,65,116,1) 100%);
   margin-left: 40px;
   margin-right: 40px;
   width: 320px;
@@ -277,7 +295,8 @@
   background-size: cover;
   background-position: center;
   */
-  background: linear-gradient(180deg, rgba(7,120,110,1) 0%, rgba(89,177,171,1) 53%);
+  border-radius: 7px;
+  background: linear-gradient(0deg, rgba(34,120,200,1) 0%, rgba(20,91,159,1) 50%, rgba(10,65,116,1) 100%);
   margin: 10px;
   width: 380px;
   height: 180px;
@@ -330,7 +349,7 @@
 
 /*DONAIONS*/
 #content_d{
-  background: linear-gradient(180deg, rgba(7,120,110,1) 0%, rgba(89,177,171,1) 53%);
+  background: linear-gradient(0deg, rgba(34,120,200,1) 0%, rgba(20,91,159,1) 50%, rgba(10,65,116,1) 100%);
   border-radius: 10px;
   float: left;
   width: 500px;
@@ -376,7 +395,8 @@ img{
 body {
   text-align: center;
   font-family: 'Arial';
-  background: linear-gradient(180deg, rgba(7,120,110,1) 0%, rgba(89,177,171,1) 53%, rgba(43,198,212,1) 100%);
+ /* background: linear-gradient(180deg, rgba(7,120,110,1) 0%, rgba(89,177,171,1) 53%, rgba(43,198,212,1) 100%);*/
+  background-color: #073764;
   color: #f9fafb;
 }
 h1{
